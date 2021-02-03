@@ -148,9 +148,8 @@ def shoe_size(player_name)
 end
 
 def find_team(team_name)
-  (
-    game_hash.filter do | home_or_away, team |
-      team[:team_name] == team_name
+  game_hash.filter do | home_or_away, team |
+    team[:team_name] == team_name
   end
 end
 
