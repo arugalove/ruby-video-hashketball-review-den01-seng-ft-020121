@@ -153,7 +153,8 @@ def find_team(team_name)
     game_hash[:home]
   when game_hash[:away][:team_name]
     game_hash[:away]
-  e
+  end
+end
 
 def team_colors(team_name)
   find_team(team_name)[:colors]
