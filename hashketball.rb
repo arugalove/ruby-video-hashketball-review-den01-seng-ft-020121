@@ -1,4 +1,4 @@
-# Write your code below game_hash
+require 'pry'
 
 def game_hash
   {
@@ -128,3 +128,31 @@ def game_hash
 end
 
 # Write code here
+
+def all_players
+  game_hash[:home][:players].concat(game_hash[:away][:players])
+end
+
+def find_player(player_name)
+  all_players.filter do | player | # filter returns an array
+    player[:player_name] == player_name
+  end
+end
+  
+def num_points_scored(player_name)
+  find_player(player_name)[0][:points]
+end
+
+def shoe_size(player_name)
+  find_player(player_name)[0][:shoe]
+end
+
+def find_team(team_name)
+  game_hash.filter do | home_or_away, team |
+    team[:team_name] == team_name
+  end
+end
+
+def team_colors(team_name)
+  find_team(team_name)[:colors]
+end
