@@ -165,6 +165,9 @@ def team_names
 end
 
 def player_numbers(team_name)
-  all_players
+  all_players.map do | player |
+    player[:number]
+  end
+end
 
 binding.pry
