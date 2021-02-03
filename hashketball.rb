@@ -169,5 +169,3 @@ def player_numbers(team_name)
     player[:number]
   end
 end
-
-binding.pry
