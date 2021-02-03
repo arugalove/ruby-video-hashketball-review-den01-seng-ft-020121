@@ -156,3 +156,5 @@ end
 def team_colors(team_name)
   find_team(team_name)[:colors]
 end
+
+binding.pry
