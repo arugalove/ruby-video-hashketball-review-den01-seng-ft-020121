@@ -147,12 +147,6 @@ def shoe_size(player_name)
   find_player(player_name)[0][:shoe]
 end
 
-def find_team(team_name)
-  game_hash.filter do | home_or_away, team |
-    team[:team_name] == team_name
-  end
-end
-
 def team_colors(team_name)
   find_team(team_name)[:colors]
 end
