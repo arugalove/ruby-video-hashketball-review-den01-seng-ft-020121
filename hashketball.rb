@@ -147,6 +147,10 @@ def shoe_size(player_name)
   find_player(player_name)[0][:shoe]
 end
 
+def find_team(team_name)
+  case team_name
+  when 
+
 def team_colors(team_name)
   find_team(team_name)[:colors]
 end
