@@ -165,7 +165,7 @@ def team_names
 end
 
 def team_players(team_name)
-  find_tea(team_name)[:players]
+  find_team(team_name)[:players]
 end
 
 def player_numbers(team_name)
