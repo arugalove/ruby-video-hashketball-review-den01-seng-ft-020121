@@ -149,7 +149,7 @@ end
 
 def find_team(team_name)
   case team_name
-  when 
+  when game_hash[:home][:team]
 
 def team_colors(team_name)
   find_team(team_name)[:colors]
